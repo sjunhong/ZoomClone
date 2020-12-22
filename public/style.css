@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#video-grid {
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+
+.main__left {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__right {
+  flex: 0.2;
+  background-color: rgb(36, 36, 36);
+}
+
+.main__videos {
+  flex: 0.9;
+  flex-grow: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__controls {
+  flex: 0.1;
+  background-color: rgb(36, 36, 36);
+  color: #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.main__controls__block {
+  display: flex;
+}
+
+.main__controls__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  min-width: 80px;
+  cursor: pointer;
+}
